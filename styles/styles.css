@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -304,8 +305,9 @@ main .section h2 {
 
 main .section p {
   font-family: var(--fixed-font-family);
+  font-size: 18px;
+  /* font-size: var(--heading-font-size-xs); */
   font-weight: 300;
-  font-size: 24px;
 }
 
 /* Button */
@@ -319,21 +321,31 @@ main .section .button-container .button {
   margin-top: 0;
   color: #df9926;
   border-color: #df9926;
-}
-main .section .button-container .button:hover,
-main .section .button-container .button:focus {
-   color: #ffffff; 
+  font-size: 20px;
 }
 main .section .button-container .button:before,
 main .section .button-container .button:hover,
 main .section .button-container .button:focus {
     background-color: #df9926;
+    color: #ffffff; 
 }
+
+/* Slider Section */
+main .section-slider.banner-carousel-container .control-container .prev,
+main .section-slider.banner-carousel-container .control-container .next,
+main .section-slider.banner-carousel-container .carousel-slide picture::before {
+  display: none;
+}
+
 
 /* 1 Section */
 main .div-container.section-one > div {
   max-width: 930px;
 }
+main .div-container.section-one p {
+  font-size: var(--heading-font-size-s);
+}
+
 
 /* 2 Section */
 main .section.section-two .cards > ul {
@@ -354,19 +366,20 @@ main .section.section-two .cards > ul > li > .cards-card-body:first-child {
   padding-bottom: 10px;
 }
 
+
 /* 3 Section */
 .section.section-thr .columns > div > div:first-child {
     flex: .5;
 }
 .section.section-thr h3 {
     font-size: 25px;
+    margin: 0 0 15px;
 }
-.section.section-thr .columns p {
-  font-size: 18px;
+.section.section-thr p {
+  font-size: var(--body-font-size-xs);
 }
 .section.section-thr .columns picture {
     height: 200px;
-    width: 180px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -376,8 +389,24 @@ main .section.section-two .cards > ul > li > .cards-card-body:first-child {
     width: auto;
     max-width: none;
 }
+.section.section-thr .columns table {
+  margin-bottom: 35px;
+}
 .section.section-thr .columns table tr {
     vertical-align: top;
+}
+.section.section-thr .columns table tr ~ tr td {
+  padding: 15px;
+  background-color: #f2f2f2;
+}
+.section.section-thr .columns table tr td {
+  max-width: 210px;
+}
+.section.section-thr .columns table tr td p {
+  margin: 0;
+}
+.section.section-thr .button-container {
+  text-align: center;
 }
 
 
@@ -385,18 +414,36 @@ main .section.section-two .cards > ul > li > .cards-card-body:first-child {
 main .section.section-fiv h2 {
   font-size: 70px;
 }
-main .section.section-fiv p {
-  font-size: 18px;
-}
 
-/* 5 Section */
+
+/* 6 Section */
 main .section.section-six h2 {
   font-size: 50px;
   margin-bottom: 50px
 }
-main .section.section-six p {
-  font-size: 18px;
-}
 main .section.section-six ul {
   font-family: var(--fixed-font-family);
+}
+
+
+/* 8 Section */
+main .section.section-eig.hero-container>div {
+  max-width: 1200px;
+}
+main .section.section-eig.hero-container .hero-content {
+  max-width: 750px;
+  margin: auto;
+}
+main .section.section-eig .hero-content h2 {
+  font-size: 70px;
+}
+main .section.section-eig .button-container .button {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+main .section.section-eig .button-container .button:before,
+main .section.section-eig .button-container .button:hover,
+main .section.section-eig .button-container .button:focus {
+    background-color: #ffffff;
+    color: #000000; 
 }
