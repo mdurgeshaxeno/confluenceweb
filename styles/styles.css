@@ -359,3 +359,15 @@ main .section.section-fiv .button-container .button:hover,
 main .section.section-fiv .button-container .button:focus {
     background-color: #df9926;
 }
+
+/* 5 Section */
+main .section.section-six h2 {
+  font-size: 50px;
+  margin-bottom: 50px
+}
+main .section.section-six p {
+  font-size: 18px;
+}
+main .section.section-six ul {
+  font-family: var(--fixed-font-family);
+}
