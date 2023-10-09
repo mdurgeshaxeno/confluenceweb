@@ -4,7 +4,6 @@
 /*--------------------------------------------------------------
   # Container, Row & Column
   --------------------------------------------------------------*/
-  .section > div,
   .container {
       padding-right: 15px;
       padding-left: 15px;
@@ -12,19 +11,16 @@
       margin-left: auto;
   }
   @media (min-width: 768px) {
-      .section > div,
       .container {
           width: 750px;
       }
   }
   @media (min-width: 992px) {
-      .section > div,
       .container {
           width: 970px;
       }
   }
   @media (min-width: 1200px) {
-      .section > div,
       .container {
           width: 1170px;
       }
