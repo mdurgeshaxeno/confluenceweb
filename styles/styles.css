@@ -308,6 +308,28 @@ main .section p {
   font-size: 24px;
 }
 
+/* Button */
+main .section .button-container,
+main .section .button-container .button {
+  margin-bottom: 0;
+}
+main .section .button-container .button {
+  border-radius: 0;
+  background: transparent;
+  margin-top: 0;
+  color: #df9926;
+  border-color: #df9926;
+}
+main .section .button-container .button:hover,
+main .section .button-container .button:focus {
+   color: #ffffff; 
+}
+main .section .button-container .button:before,
+main .section .button-container .button:hover,
+main .section .button-container .button:focus {
+    background-color: #df9926;
+}
+
 /* 1 Section */
 main .div-container.section-one > div {
   max-width: 930px;
@@ -332,32 +354,39 @@ main .section.section-two .cards > ul > li > .cards-card-body:first-child {
   padding-bottom: 10px;
 }
 
+/* 3 Section */
+.section.section-thr .columns > div > div:first-child {
+    flex: .5;
+}
+.section.section-thr h3 {
+    font-size: 25px;
+}
+.section.section-thr .columns p {
+  font-size: 18px;
+}
+.section.section-thr .columns picture {
+    height: 200px;
+    width: 180px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.section.section-thr .columns picture * {
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+.section.section-thr .columns table tr {
+    vertical-align: top;
+}
+
+
 /* 5 Section */
 main .section.section-fiv h2 {
   font-size: 70px;
 }
 main .section.section-fiv p {
   font-size: 18px;
-}
-main .section.section-fiv .button-container,
-main .section.section-fiv .button-container .button {
-  margin-bottom: 0;
-}
-main .section.section-fiv .button-container .button {
-  border-radius: 0;
-  background: transparent;
-  margin-top: 0;
-  color: #df9926;
-  border-color: #df9926;
-}
-main .section.section-fiv .button-container .button:hover,
-main .section.section-fiv .button-container .button:focus {
-    color: #ffffff; 
-}
-main .section.section-fiv .button-container .button:before,
-main .section.section-fiv .button-container .button:hover,
-main .section.section-fiv .button-container .button:focus {
-    background-color: #df9926;
 }
 
 /* 5 Section */
