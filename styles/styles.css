@@ -20,10 +20,11 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: #fff;
+  --background-color: #ffffff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
-  --text-color: #000;
+  --text-color: #000000;
+  --text-color-white: #ffffff;
 
   /* fonts */
   --body-font-family: 'Oswald', sans-serif;
@@ -102,6 +103,10 @@ p {
   margin: 0 0 1em;
 }
 
+p:empty {
+ display: none;
+}
+
 code, pre, samp {
   font-family: var(--fixed-font-family);
   font-size: var(--body-font-size-s);
@@ -117,8 +122,8 @@ pre {
 
 /* buttons */
 .button-container .button {
-  color: #fff;
-  border: 2px solid #fff;
+  color: var(--text-color-white);
+  border: 2px solid #ffffff;
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -151,16 +156,16 @@ pre {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: var(--background-color);
   z-index: -1;
   transform: translate(-50%, -50%) rotate(45deg);
 }
 .button-container .button:hover,
 .button-container .button:focus {
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   /*  background-color: transparent;*/
   color: #000;
-  background-color: #fff;
+  background-color: var(--background-color);
   text-decoration: none;
 }
 .button-container .button:hover:before {
@@ -278,6 +283,15 @@ main img {
 .bg-light-white {
   background-color: #f2f2f2 !important;
 }
+main .section.section-nin .button-container .button,
+.position-absolute-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
 
 /* progressive section appearance */
 main .section[data-section-status='loading'],
@@ -327,7 +341,7 @@ main .section .button-container .button:before,
 main .section .button-container .button:hover,
 main .section .button-container .button:focus {
     background-color: #df9926;
-    color: #ffffff; 
+    color: var(--text-color-white);
 }
 
 /* Slider Section */
@@ -438,12 +452,33 @@ main .section.section-eig .hero-content h2 {
   font-size: 70px;
 }
 main .section.section-eig .button-container .button {
-  color: #ffffff;
+  color: var(--text-color-white);
   border-color: #ffffff;
 }
 main .section.section-eig .button-container .button:before,
 main .section.section-eig .button-container .button:hover,
 main .section.section-eig .button-container .button:focus {
-    background-color: #ffffff;
+    background-color: var(--background-color);
     color: #000000; 
+}
+
+/* 9 Section */
+main .section.section-nin.hero-container>div {
+  max-width: 1200px;
+  margin-top: 75px;
+}
+main .section.section-nin .button-container .button {
+ font-family: var(--fixed-font-family);
+ font-size: 18px;
+ color: var(--text-color-white);
+ width: 80px;
+ height: 60px;
+ background-color: rgba(0, 0, 0, 0.8);
+ text-align: center;
+ border-radius: 50px;
+ font-weight: 400;
+ border: transparent;
+ line-height: 28px;
+ padding: 20px 10px;
+ text-transform: capitalize;
 }
