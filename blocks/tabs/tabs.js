@@ -1,5 +1,7 @@
-import { loadBlocks } from '../../scripts/lib-franklin.js';
-import { decorateMain } from '../../scripts/scripts.js';
+//import { loadBlocks } from '../../scripts/lib-franklin.js';
+//import { decorateMain } from '../../scripts/scripts.js';
+import { createOptimizedPicture, getMetadata } from '../../scripts/lib-franklin.js';
+import { bindSwipeToElement } from '../../scripts/scripts.js';
 
 async function generateTabMainBlock(html) {
   const main = document.createElement('main');
