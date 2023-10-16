@@ -3,7 +3,7 @@ import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
-  ul.classList.add('owl-carousel', 'owl-theme', 'card-carousel');
+  ul.classList.add('owl-carousel', 'owl-theme', 'card-carousel-list');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     li.innerHTML = row.innerHTML;
