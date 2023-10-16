@@ -7,3 +7,30 @@
 <!-- owl.carousel -->
 <script src="/scripts/owl.carousel.min.js" type="module"></script>
 <link rel="stylesheet" href="/styles/owl.carousel.min.css"/>
+<script>
+$(document).ready(function() {
+  var owl = $('.card-carousel');
+  owl.owlCarousel({
+    items: 4,
+    loop: true,
+    margin: 10,
+    dots: false,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      }
+    }
+  });
+});
+</script>
